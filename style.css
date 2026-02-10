@@ -1,31 +1,39 @@
+/* --- RESET & DIỆT MÀU XANH (BLUE LINKS) --- */
 * { margin: 0; padding: 0; box-sizing: border-box; }
-html { scroll-behavior: smooth; }
-body { font-family: 'Segoe UI', Arial, sans-serif; background: #fff; line-height: 1.6; }
+a { text-decoration: none; color: inherit; } /* Ép link dùng màu của text cha */
+body { font-family: 'Segoe UI', Arial, sans-serif; background: #fff; line-height: 1.6; color: #1a1a1a; }
+
 .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
 
+/* Header & Nav */
 header { text-align: center; padding: 40px 0; border-bottom: 5px solid #8b0000; }
 .main-title { color: #8b0000; font-size: 2.2rem; text-transform: uppercase; font-weight: 900; }
 nav { background: #8b0000; position: sticky; top: 0; z-index: 1000; }
 nav ul { list-style: none; display: flex; justify-content: center; }
-nav ul li a { color: #fff; text-decoration: none; padding: 15px 25px; display: block; font-weight: 600; }
+nav ul li a { color: #fff !important; padding: 15px 25px; display: block; font-weight: 600; }
 
+/* --- FIX TEXT KHÔNG BỊ XANH --- */
+h2 a, h3 a { color: #1a1a1a; transition: 0.3s; }
+h2 a:hover, h3 a:hover { color: #8b0000; }
+
+/* Layout News Grid */
 .news-modern-grid { display: flex; gap: 40px; margin-top: 30px; }
-.news-feature { flex: 2; }
+.news-feature { flex: 2.5; }
 .news-sidebar { flex: 1; border-left: 1px solid #eee; padding-left: 20px; }
 
-/* CSS Slide Ảnh */
-.carousel-container { position: relative; width: 100%; height: 450px; overflow: hidden; background: #000; margin-bottom: 10px; }
-.carousel-slide img { position: absolute; width: 100%; height: 100%; object-fit: cover; opacity: 0; transition: opacity 0.5s ease; }
+/* Slide Ảnh Carousel */
+.carousel-container { position: relative; width: 100%; height: 450px; background: #000; overflow: hidden; }
+.carousel-slide img { position: absolute; width: 100%; height: 100%; object-fit: cover; opacity: 0; transition: 0.5s; }
 .carousel-slide img.active { opacity: 1; z-index: 2; }
 .carousel-btn { position: absolute; top: 50%; transform: translateY(-50%); background: rgba(0,0,0,0.5); color: #fff; border: none; padding: 15px; cursor: pointer; z-index: 10; font-size: 1.5rem; }
-#nextBtn { right: 0; }
-#prevBtn { left: 0; }
+#nextBtn { right: 0; } #prevBtn { left: 0; }
 
-.tag-red { background: #8b0000; color: #fff; padding: 4px 10px; font-size: 0.7rem; font-weight: bold; display: inline-block; margin-bottom: 15px; }
-.img-box-large img, .side-img-box img, .full-width-img { width: 100%; height: auto; display: block; }
-.feature-divider, .media-divider { border: none; height: 1px; background: #eee; margin: 40px 0; }
-
-.video-wrapper { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; }
+/* --- CHIA ĐÔI PHẦN MEDIA --- */
+.multimedia-container { margin: 50px 0; }
+.media-flex { display: flex; gap: 20px; flex-wrap: wrap; }
+.media-card { flex: 1; min-width: 350px; border: 1px solid #eee; padding: 15px; background: #fdfdfd; }
+.video-wrapper { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; background: #000; }
 .video-wrapper iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
 
-footer { background: #1a1a1a; color: #ccc; padding: 40px 0; margin-top: 50px; text-align: center; }
+/* Footer */
+.footer-bottom { background: #8b0000; color: #fff; text-align: center; padding: 15px 0; font-style: italic; margin-top: 50px; }
