@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sản Phẩm Trưng Bày - Tây Tiến Tổ 2</title>
+    <title>Sản Phẩm Tây Tiến - Tổ 2</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -17,7 +17,6 @@
             <ul>
                 <li><a href="#">Trang Chủ</a></li>
                 <li><a href="#gallery">Kho Tư Liệu</a></li>
-                <li><a href="#criticism">Phê Bình</a></li>
                 <li><a href="#mindmap">Sơ Đồ Tư Duy</a></li>
                 <li><a href="#media1">Multimedia</a></li>
             </ul>
@@ -27,14 +26,23 @@
             <section class="news-modern-grid" id="gallery">
                 <div class="news-feature">
                     <article class="news-feature-item">
-                        <span class="tag-red">Tư liệu hình ảnh</span>
-                        <div class="img-box-large">
-                            <img src="tay_tien_1.jpg" alt="Chặng đường hoạt động">
+                        <span class="tag-red">Kho ảnh tư liệu (Slide)</span>
+                        
+                        <div class="carousel-container">
+                            <div class="carousel-slide">
+                                <img src="tay_tien_1.jpg" alt="Đoàn quân" class="active">
+                                <img src="vukhi.jpg" alt="Vũ khí">
+                                <img src="dongquan.jpg" alt="Đóng quân">
+                                <img src="sinhhoat.jpg" alt="Sinh hoạt">
+                            </div>
+                            <button id="prevBtn" class="carousel-btn">❮</button>
+                            <button id="nextBtn" class="carousel-btn">❯</button>
                         </div>
-                        <p class="img-caption">Nguồn: Sưu tầm từ Internet & Tư liệu lịch sử</p>
+
+                        <p class="img-caption">Nguồn: Tư liệu lịch sử tổng hợp (Bấm mũi tên để xem thêm).</p>
                         <div class="news-feature-text">
                             <h2><a href="#">Chặng đường hoạt động & Vũ khí chiến đấu</a></h2>
-                            <p>Bộ ảnh tái hiện chân thực địa bàn hoạt động (Sơn La, Hòa Bình, Sầm Nưa...) và hoàn cảnh chiến đấu thiếu thốn, bệnh tật của người lính. Tài liệu đã được chọn lọc và sắp xếp theo trình tự thời gian.</p>
+                            <p>Bộ ảnh tái hiện chân thực địa bàn hoạt động hiểm trở và hoàn cảnh chiến đấu thiếu thốn của người lính Tây Tiến.</p>
                         </div>
                     </article>
 
@@ -42,49 +50,11 @@
 
                     <article class="news-feature-item">
                         <span class="tag-red">Bối cảnh lịch sử</span>
-                        <section class="news-modern-grid" id="gallery">
-    <div class="news-feature">
-        <article class="news-feature-item">
-            <span class="tag-red">Kho ảnh tư liệu (Slide)</span>
-            
-            <div class="carousel-container">
-                <div class="carousel-slide">
-                    <img src="tay_tien_1.jpg" alt="Đoàn quân Tây Tiến" class="active">
-                    <img src="vukhi.jpg" alt="Vũ khí thô sơ">
-                    <img src="dongquan.jpg" alt="Nơi đóng quân rừng núi">
-                    <img src="sinhhoat.jpg" alt="Sinh hoạt người lính">
-                </div>
-                
-                <button id="prevBtn" class="carousel-btn">❮</button>
-                <button id="nextBtn" class="carousel-btn">❯</button>
-            </div>
-            <p class="img-caption">Nguồn: Sưu tầm tổng hợp từ tư liệu lịch sử (Bấm mũi tên để xem thêm).</p>
-            <div class="news-feature-text">
-                <h2><a href="#">Chặng đường hoạt động, Vũ khí & Nơi đóng quân</a></h2>
-                <p>Bộ sưu tập ảnh tái hiện chân thực hành trình gian khổ, những vũ khí thô sơ và địa bàn đóng quân hiểm trở của đoàn binh Tây Tiến. Tư liệu đã được chọn lọc kỹ lưỡng.</p>
-            </div>
-        </article><section class="news-modern-grid" id="gallery">
-    <div class="news-feature">
-        <article class="news-feature-item">
-            <span class="tag-red">Kho ảnh tư liệu (Slide)</span>
-            
-            <div class="carousel-container">
-                <div class="carousel-slide">
-                    <img src="tay_tien_1.jpg" alt="Đoàn quân Tây Tiến" class="active">
-                    <img src="vukhi.jpg" alt="Vũ khí thô sơ">
-                    <img src="dongquan.jpg" alt="Nơi đóng quân rừng núi">
-                    <img src="sinhhoat.jpg" alt="Sinh hoạt người lính">
-                </div>
-                
-                <button id="prevBtn" class="carousel-btn">❮</button>
-                <button id="nextBtn" class="carousel-btn">❯</button>
-            </div>
-            <p class="img-caption">Nguồn: Sưu tầm tổng hợp từ tư liệu lịch sử (Bấm mũi tên để xem thêm).</p>
-            <div class="news-feature-text">
-                <h2><a href="#">Chặng đường hoạt động, Vũ khí & Nơi đóng quân</a></h2>
-                <p>Bộ sưu tập ảnh tái hiện chân thực hành trình gian khổ, những vũ khí thô sơ và địa bàn đóng quân hiểm trở của đoàn binh Tây Tiến. Tư liệu đã được chọn lọc kỹ lưỡng.</p>
-            </div>
-        </article>
+                        <div class="img-box-large"><img src="boicanh.jpg" alt="Bối cảnh"></div>
+                        <div class="news-feature-text">
+                            <h2><a href="#">Sự hình thành quân đoàn Tây Tiến (1947)</a></h2>
+                            <p>Tóm tắt về nhiệm vụ bảo vệ biên giới Việt - Lào và thành phần trí thức Hà Nội xếp bút nghiên lên đường.</p>
+                        </div>
                     </article>
                 </div>
 
@@ -94,15 +64,14 @@
                         <div class="side-img-box"><img src="phe_binh_1.jpg" alt="Phê bình"></div>
                         <div class="side-info">
                             <h3><a href="#">Các chuyên luận về Quang Dũng</a></h3>
-                            <p class="small-text">Dữ liệu được scan và đánh máy lại từ các tuyển tập phê bình uy tín.</p>
+                            <p class="small-text">Dữ liệu được scan và đánh máy lại từ các tuyển tập uy tín.</p>
                         </div>
                     </article>
-
                     <article class="side-post-modern">
                         <div class="side-img-box"><img src="phe_binh_2.jpg" alt="Bình luận"></div>
                         <div class="side-info">
                             <h3><a href="#">Bình luận nghệ thuật Tây Tiến</a></h3>
-                            <p class="small-text">Phân loại theo nhóm đề mục: Cảm hứng lãng mạn và Bi tráng.</p>
+                            <p class="small-text">Phân loại theo nhóm: Cảm hứng lãng mạn và Bi tráng.</p>
                         </div>
                     </article>
                 </aside>
@@ -114,7 +83,6 @@
                 <h2 class="section-title">Sơ đồ tư duy: Tác giả & Tác phẩm</h2>
                 <div class="mindmap-container">
                     <img src="so_do_tu_duy.jpg" alt="Sơ đồ tư duy" class="full-width-img">
-                    <p class="img-caption">Phương thức: Xây dựng bằng trình duyệt web ABC, hệ thống hóa kiến thức tinh gọn.</p>
                 </div>
             </section>
 
@@ -123,37 +91,36 @@
                 <h2 class="section-title">Tư liệu Video & Clip</h2>
                 <div class="media-flex">
                     <div class="media-card">
-                        <h3>Phim tư liệu chặng đường quân hành</h3>
+                        <h3>Phim tư liệu quân hành</h3>
                         <div class="video-wrapper">
                             <iframe src="https://www.youtube.com/embed/S2pEon80v-4" frameborder="0" allowfullscreen></iframe>
                         </div>
-                        <p class="media-desc">Video sưu tầm từ nguồn chính thống, đã được xử lý ghi rõ nội dung.</p>
                     </div>
                     <div class="media-card">
-                        <h3>Nhạc truyền thống Tây Tiến</h3>
+                        <h3>Hành khúc Tây Tiến</h3>
                         <div class="video-wrapper">
                             <iframe src="https://www.youtube.com/embed/N-0vVp2U-N4" frameborder="0" allowfullscreen></iframe>
                         </div>
-                        <p class="media-desc">Hành khúc gắn liền với lý tưởng "Chiến trường đi chẳng tiếc đời xanh".</p>
                     </div>
                 </div>
             </section>
         </main>
 
-        <footer id="footer1">
+        <footer>
             <div class="footer-container">
                 <div class="footer-column">
                     <h3>Xử lý tài liệu</h3>
-                    <p>• Phân loại bài viết theo nhóm và đề mục.</p>
-                    <p>• Trích dẫn nguyên văn và ghi rõ bản quyền tác giả.</p>
+                    <p>• Phân loại bài viết theo đề mục.</p>
+                    <p>• Trích dẫn nguyên văn ghi rõ nguồn.</p>
                 </div>
                 <div class="footer-column">
                     <h3>Thông tin nhóm</h3>
                     <p>&copy; 2026 Sản phẩm Dự án Văn học - Tổ 2 - 12A11</p>
                 </div>
             </div>
-            <div class="footer-bottom">Báo cáo ứng dụng CNTT trong trình bày sản phẩm học tập</div>
         </footer>
     </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
