@@ -1,0 +1,92 @@
+/* --- RESET & LAYOUT --- */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: 'Segoe UI', Arial, sans-serif; background: #fff; line-height: 1.6; }
+.container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+
+header { text-align: center; padding: 30px 0; border-bottom: 5px solid #8b0000; }
+.main-title { color: #8b0000; font-size: 2.2rem; text-transform: uppercase; }
+nav { background: #8b0000; width: 100%; }
+nav ul { list-style: none; display: flex; justify-content: center; }
+nav ul li a { color: #fff; text-decoration: none; padding: 15px 20px; display: block; font-weight: 600; }
+
+/* Grid 1 To - Sidebar */
+.news-modern-grid { display: flex; gap: 40px; margin-top: 30px; }
+.news-feature { flex: 2; display: flex; flex-direction: column; gap: 30px; }
+.news-sidebar { flex: 1; display: flex; flex-direction: column; gap: 20px; }
+
+/* Styling */
+.tag-red { background: #8b0000; color: #fff; padding: 3px 10px; font-size: 0.7rem; font-weight: bold; display: inline-block; margin-bottom: 10px; }
+.img-box-large img, .side-img-box img { width: 100%; height: 100%; object-fit: cover; }
+.img-box-large { width: 100%; height: 400px; overflow: hidden; }
+.img-caption { font-size: 0.75rem; color: #888; font-style: italic; margin-bottom: 10px; }
+.feature-divider { border: none; height: 1px; background: #eee; }
+.news-feature-text h2 a { color: #000; text-decoration: none; font-size: 1.8rem; font-weight: 800; }
+
+/* Sidebar */
+.side-post-modern { display: flex; flex-direction: column; gap: 10px; border-bottom: 1px solid #eee; padding-bottom: 15px; }
+.side-img-box { width: 100%; height: 160px; background: #eee; }
+.side-info h3 a { color: #222; text-decoration: none; font-size: 1rem; font-weight: 700; }
+.small-text { font-size: 0.85rem; color: #666; display: block; }
+
+/* --- FOOTER STYLE --- */
+
+footer {
+    background: #1a1a1a; /* Màu nền tối cho sang */
+    color: #ccc;
+    width: 100%;
+    margin-top: 50px;
+    padding-top: 40px;
+    font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px 30px;
+}
+
+.footer-column {
+    flex: 1;
+    min-width: 250px;
+    margin-bottom: 20px;
+}
+
+.footer-column h3 {
+    color: #fff;
+    border-left: 4px solid #8b0000; /* Vách ngăn màu đỏ đô hào hùng */
+    padding-left: 10px;
+    margin-bottom: 15px;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+}
+
+.footer-column p {
+    font-size: 0.9rem;
+    line-height: 1.8;
+    margin-bottom: 8px;
+}
+
+/* Thanh đỏ đô chạy dưới cùng */
+.footer-bottom {
+    background: #8b0000;
+    color: #fff;
+    text-align: center;
+    padding: 12px 0;
+    font-size: 0.8rem;
+    font-style: italic;
+    letter-spacing: 1px;
+}
+
+/* Đảm bảo footer luôn ở dưới đáy dù nội dung ít */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.main-wrapper {
+    flex: 1;
+}
